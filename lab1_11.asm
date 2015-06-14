@@ -1,5 +1,5 @@
 #Programando MIPS con MARS
-#Imprime 3 lineas de str:V
+#Imprime 3 lineas de str:V :v :v
 	.data
 str:
  	.asciiz "hola mundo\n"
