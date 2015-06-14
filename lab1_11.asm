@@ -1,5 +1,5 @@
 #Programando MIPS con MARS
-#
+#Imprime 3 lineas de str:V
 	.data
 str:
  	.asciiz "hola mundo\n"
@@ -12,13 +12,13 @@ str2:
 main: 
 				#llamada al sistema para imprimir cadena
 	li $v0, 4 		# cargo servicio "4" en el registro %v0
-	la $a0, str 		# dirección del cadena a imprimir
+	la $a0, str 		# direcciÃ³n del cadena a imprimir
  	syscall 		# imprime la cadena
 	li $v0, 4 		# cargo servicio "4" en el registro %v0
-	la $a0, str1 		# dirección del cadena a imprimir
+	la $a0, str1 		# direcciÃ³n del cadena a imprimir
  	syscall 		# imprime la cadena
  	li $v0, 4 		# cargo servicio "4" en el registro %v0
-	la $a0, str2		# dirección del cadena a imprimir
+	la $a0, str2		# direcciÃ³n del cadena a imprimir
  	syscall 		# imprime la cadena
   #llama alsistema para terminar y salir
  	li $v0, 10 		# cargo servicio "10" en el registro $v0
